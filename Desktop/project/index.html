@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(211, 229, 237);
+            padding: 15px;
+            border: 5px;
+            margin: 25px;
+        
+        }
+        .container{
+            background-color: rgb(165, 42, 134);
+        }
+        #phone{
+            color: purple;
+        }
+        p{
+            color: blue;
+            text-align:left;
+        }
+        .radical{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="rexan">
+     <label style="color:brown;"for="details">Enter your details below</label>
+     <ul>
+        <li><input class="radical" type="email" placeholder="your_email@gamil.com" name="email" style="background-color:white;" required></li>
+        <br>
+        <li><input class="radical" type="password" placeholder="password" name="password" style="background-color: white;"></li>
+     <p>!Type a complex password with 8-20 characters.</p>
+     <br>
+     <li><input class="radical" type="text" id="phone" name="phone" onkeypress="phoneno()" maxlength="10" placeholder="+91 Phone Number">
+     <hr>
+     <h3 style="text-align: left;"><em>Enter your profession</em></h3>
+     <li><input type="radio" name="profession" class="container">student
+         <input type="radio" name="profession" class="container">Teacher
+        <input type="radio" name="profession"class="container">Developer</li>
+    </ul>
+    choose the stage if you are (student):
+    <select name="stage">
+        <option value="select">select</option>
+        <option value="first primary">first primary</option>
+        <option value="secondary stage">secondary stage</option>
+        <option value="third stage">third stage</option>
+    </select>
+    <br><br>
+    <ul>
+        <li>Enter your Birth date.<input type="date"></li>
+        <br>
+        <li><textarea class="radical"   rows="1" cols="25" placeholder="Any notes" ></textarea></li>
+    </ul>
+    <input type="submit" value="submit">
+    <input type="reset"  value="reset">
+     </form>
+    </body>
+</html>
